@@ -26,7 +26,7 @@ export function Chapter2({ onNext }: { onNext: () => void }) {
     >
       {/* Chapter 2 background photo — CENTER */}
       <BackgroundPhoto
-        src={CONFIG.photos[2]}
+        src={CONFIG.photos[1]}
         opacity={0.4}
         position="center"
       />
