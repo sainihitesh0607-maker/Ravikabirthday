@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Outfit", sans-serif;
+  --color-bg-dark: #0c0a09;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-br from-white via-pink-100 to-rose-200 bg-clip-text text-transparent;
+  }
+  
+  .glass-panel {
+    @apply bg-stone-950/40 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)];
+  }
+
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overscroll-behavior-y: none;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-dark);
+  color: #fafaf9;
+}
+
+/* Hide scrollbar for clean cinematic look */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
