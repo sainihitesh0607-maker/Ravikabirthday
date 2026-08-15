@@ -58,7 +58,7 @@ export function Chapter3({ onNext }: { onNext: () => void }) {
       className="flex flex-col items-center w-full max-w-5xl mx-auto py-8 cursor-pointer min-h-[80vh] px-4"
       onClick={() => setSkip(true)}
     >
-      <BackgroundPhoto src={CONFIG.photos[4]} opacity={0.25} position="top" />
+      <BackgroundPhoto src={CONFIG.photos[4]} opacity={0.25} position="center" />
       <motion.h1 custom={0.5} initial="hidden" animate="visible" variants={textVariants} className="text-3xl md:text-4xl font-heading text-gradient text-center mb-12">
         A Few Things I Adore About You
       </motion.h1>
@@ -75,7 +75,7 @@ export function Chapter3({ onNext }: { onNext: () => void }) {
           >
             {card.image && (
               <div className="absolute inset-0 z-0 opacity-20">
-                 <img src={card.image} className="w-full h-full object-cover" style={{ objectPosition: 'center top' }} />
+                 <img src={card.image} className="w-full h-full object-cover" style={{ objectPosition: 'center' }} />
               </div>
             )}
             <div className="relative z-10">
