@@ -43,7 +43,7 @@ export function Chapter3({ onNext }: { onNext: () => void }) {
       desc: "Tumhari ek photo...\nkabhi kabhi poora mood badal deti hai.",
       delay: 8,
       className: "md:col-span-1 md:row-span-1",
-      image: CONFIG.photos[3]
+      image: CONFIG.photos[4]
     },
     {
       title: "💫 The Little Things",
@@ -58,7 +58,7 @@ export function Chapter3({ onNext }: { onNext: () => void }) {
       className="flex flex-col items-center w-full max-w-5xl mx-auto py-8 cursor-pointer min-h-[80vh] px-4"
       onClick={() => setSkip(true)}
     >
-      <BackgroundPhoto src={CONFIG.photos[3]} opacity={0.25} position="top" />
+      <BackgroundPhoto src={CONFIG.photos[4]} opacity={0.25} position="top" />
       <motion.h1 custom={0.5} initial="hidden" animate="visible" variants={textVariants} className="text-3xl md:text-4xl font-heading text-gradient text-center mb-12">
         A Few Things I Adore About You
       </motion.h1>
