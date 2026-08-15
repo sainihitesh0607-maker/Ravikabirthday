@@ -21,7 +21,7 @@ export function Chapter5({ onNext }: { onNext: () => void }) {
       className="flex flex-col items-center w-full max-w-2xl mx-auto py-10 px-4 cursor-pointer min-h-[80vh]"
       onClick={() => setSkip(true)}
     >
-      <BackgroundPhoto src={CONFIG.photos[8]} opacity={0.3} />
+      <BackgroundPhoto src={CONFIG.photos[11]} opacity={0.3} />
 
       <motion.h1 custom={1} initial="hidden" animate="visible" variants={variants} className="text-3xl md:text-4xl font-heading text-gradient text-center mb-12">
         Even From Far Away...
